@@ -1,0 +1,176 @@
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+
+}
+*{
+    box-sizing: border-box;
+}
+
+.d-none{
+    display: none;
+}
+
+.login-register{
+    background-color: #fff;
+    
+    width: 500px;
+    margin-top: 30px;
+    .lr-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__buttons{
+            display: flex;
+            flex-direction: row;
+        justify-content: center;
+   
+        }
+        &__button{
+            background-color: #f2f2f2;
+            border-radius: 3px 3px 0 0;
+            border: none;
+            color: #333333;
+            font-size: 16px;
+            height: 48px;
+            position: relative;
+            outline: none;
+            width: 100% ;
+            &:hover{
+                cursor:pointer;
+            }
+            &--mr{
+                margin-right: 5px
+            }
+            &--left:not(.active)::after {
+                left: 0;
+            }
+            &--right:not(.active)::after {
+                right: 0;
+            }
+            &:not(.active)::after {
+                content: '';
+                position: absolute;
+                border-bottom: 1px solid #e6e6e6;
+                width: 102%;
+                bottom: 0;
+            }
+        }
+        .active{
+            color: #f27a1a ;
+            background-color: #fff;
+            border: 1px solid #e6e6e6;
+            border-bottom: 0;
+            pointer-events: none;
+        }
+    }
+
+}
+.lr-container{
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-top: 0;
+    padding:37px 40px 40px 40px ;
+    //display: flex;
+    //flex-direction: column;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    &__ns-wrap{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    &__input{
+        background-color: #ebeffa4f;
+        border: 1px solid #e6e6e6;
+        border-radius: 30px;
+        color: rgb(56, 55, 55);
+        font-size: 12px;
+        height:44px;
+        margin-bottom: 28px;
+        outline: none;
+        padding: 10px 20px;
+        width: 100%;
+        &--flex{
+            width: auto;
+           
+        }
+        &--c{
+            border: 1px solid #ff0000; 
+        }
+    }
+ 
+    &__password-wrapper{
+        position: relative;
+
+    }
+    &__eye{
+        position: absolute;
+        right: 18px;
+        top: 10px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__error{
+        font-size:12px;
+        color: red;
+    }
+   &__fc-wrapper{
+       display: flex;
+       flex-direction:row;
+       align-items: center;
+       justify-content: space-between
+   }
+   &__forgot-Password{
+       &--td{
+        color: #FF8B39;
+        font-size:14px;
+        text-decoration: none;
+
+       } 
+   }
+   &__check-wrapper{
+       display: flex;
+       flex-direction:row;
+       justify-content: space-between;
+       align-items: center;
+       &--fs{
+           font-size:14px;
+           margin-left: 8px;
+       }
+    .lr-container__contract--fs{
+        font-size:12px;
+        color: #FF8B39; 
+    }
+    .lr-container__contract--color{
+        color: rgb(49, 48, 48);
+    }
+   }
+
+   &__btn-wrapper{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       margin-top:30px;
+   }
+   &__btn{
+       background-color: #FF8B39;
+      border: none;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 16px;
+      height: 44px;
+      width:230px;
+      &:hover{
+          cursor: pointer;
+      }
+      &:disabled{
+        background-color: #f8ae7a;
+      }
+   }
+}

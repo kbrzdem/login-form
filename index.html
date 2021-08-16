@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+</head>
+<body>
+    <div class="login-register"> 
+            <div class="lr-header">
+                <div class="lr-header__buttons">
+                    <button data-tabs="login" class="lr-header__button lr-header__button--mr lr-header__button--left active">
+                        <span>Giriş Yap</span>
+                    </button>
+                    <button data-tabs="register" class="lr-header__button lr-header__button--right">
+                        <span>Üye Ol</span>
+                    </button>
+                </div>
+            </div>
+            <div class="lr-container">
+                    <div class="lr-container__login lr-wrap ">
+                        <form class="lr-form">
+                                <div class="lr-container__email">
+                                    <input type="email" class="lr-container__input  usermail" name="email" placeholder="E-Mail Adresiniz" required>
+                                    <div class="alert"></div>
+                                </div>
+                                <div class="lr-container__password-wrapper">
+                                    <div class="lr-container__password ">
+                                        <input type="password" class="lr-container__input userpassword" name="password" placeholder="Şifreniz" required>
+                                        <div class="alert"></div>
+                                    </div>
+                                    
+                                    <i class="lr-container__eye ">
+                                        <span class="material-icons material-icons-outlined">
+                                            visibility
+                                            </span>
+                                    </i>
+                                </div>
+                                <div class="lr-container__fc-wrapper">
+                                    <div class="lr-container__forgot-Password">
+                                        <a href="" class="lr-container__forgot-Password--td">
+                                             <span>Şifremi Unuttum</span>
+                                        </a>
+                                    </div>
+                                    <div class="lr-container__check-wrapper">
+                                            <input type="checkbox" id="login__checkbox" class="lr-container__check-wrapper--fs">
+                                            <label for="login__checkbox" class="lr-container__check-wrapper--fs">
+                                              <span>Beni Hatırla</span>  
+                                            </label>
+                                    </div>    
+                                </div>
+                                <div class="lr-container__btn-wrapper">
+                                    <button type="submit"  class="lr-container__btn">
+                                        <span>GİRİŞ YAP</span>
+                                    </button>
+                                </div>
+                        </form>
+                </div>
+                <div class="lr-container__register lr-wrap d-none">
+                    <form class="lr-form">
+                            <div>
+                                <div class="lr-container__ns-wrap">
+                                    <div class="lr-container__name">
+                                        <input type="name" class="lr-container__input lr-container__input--flex registername" name="Ad" placeholder="Adınız" required> 
+                                    </div>
+                                    <div class="lr-container__surname">
+                                        <input type="surname" class="lr-container__input lr-container__input--flex register__surname" name="Soyad" placeholder="Soyadınız" required>
+                                        
+                                    </div>
+                                </div>
+                                <div class="alert"></div>
+                            </div>
+                            <div class="lr-container__email">
+                                <input type="email" class="lr-container__input registermail " name="email" placeholder="E-Posta Adresiniz" required>
+                                <div class="alert"></div>
+                            </div>
+                            <div class="lr-container__number">
+                                <input type="number" class="lr-container__input registerphone" name="number" placeholder="Telefon Numaranız" required>
+                                <div class="alert"></div>
+                            </div>
+                            <div class="lr-container__password-wrapper">
+                                <div class="lr-container__password">
+                                    <input type="password" class="lr-container__input register__password" name="password" placeholder="Şifreniz" required>
+                                    <div class="alert"></div>
+                                </div>
+                                <i class="lr-container__eye" >
+                                    <span class="material-icons material-icons-outlined">
+                                        visibility
+                                        </span>
+                                </i>
+                            </div>
+                            <div class="lr-container__password-wrapper">
+                                <div class="lr-container__password">
+                                    <input type="password" class="lr-container__input checkregister__password" name="password" placeholder="Şifre Onayı" required>
+                                    <div class="alert"></div>
+                                </div>
+                                <i class="lr-container__eye" >
+                                    <span class="material-icons material-icons-outlined">
+                                        visibility
+                                        </span>
+                                </i>
+                            </div>
+                            <div class="lr-container__check-wrapper">
+                                <input type="checkbox"class="register__checkbox" id="registerform__checkbox" >
+                                <label for="registerform__checkbox" class="lr-container__contract ">
+                                  <span class="lr-container__contract lr-container__contract--fs">Üyelik koşullarını <span class="lr-container__contract--color"> ve kişisel verilerimin korunmasını kabul ediyorum.</span> </span>  
+                                </label>
+                            </div> 
+                            <div class="lr-container__btn-wrapper" >
+                                <button type="submit"  class="lr-container__btn register__btn" disabled="disabled">
+                                    <span>ÜYE OL</span>
+                                </button>
+                            </div>
+                    </form>
+            </div>
+            </div>
+    </div>
+</body>
+</html>
+
+<script src="script.js">
+    
+</script>
